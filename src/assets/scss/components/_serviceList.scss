@@ -1,0 +1,36 @@
+.ServiceList{
+    margin: 0 auto;
+    max-width: 1020px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 90px;
+    width: 100%;
+
+    &-title{
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 38px;
+        text-align: center;    
+        text-transform: uppercase;            
+    }
+
+    &-subtitle {
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 38px;
+        text-align: center;    
+        text-transform: uppercase;    
+    }
+
+    &-text{
+        font-size: 14px;
+        margin-bottom: 85px;
+        text-align: center;            
+    }
+}

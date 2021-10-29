@@ -1,0 +1,40 @@
+.paginationCustom {
+    list-style: none;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.pageCustom {
+    &-item {
+        display: inline-block;
+        margin: .5rem;
+        text-align: center;
+    }
+    &-link {
+        border: solid 1px darken($cream-white, 7);
+        border-radius: 65px;
+        color: $black;
+        display: block;
+        font-size: 16px;
+        height: 65px;
+        line-height: 65px;
+        text-decoration: none;
+        width: 65px;
+        &:hover {
+            @extend %select_hover_pageCustom;
+        }
+        &.next, &.back {
+            padding-left: 72.5px;
+            padding-right: 72.5px;
+            width: auto;
+        }
+        &.next{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &.selected {
+            @extend %select_hover_pageCustom;
+        }
+    }
+}

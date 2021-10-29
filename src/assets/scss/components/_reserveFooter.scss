@@ -1,0 +1,85 @@
+.ReserveFooter {
+    background-color: $light-black;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    color: $white;
+
+    &-description{
+        width: 50%;
+    }
+
+    &-pricesContainer {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 84px;
+    }
+
+    &-pricesWrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &-prices {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: $regular-font;
+        font-size: 14;
+        font-weight: 300;
+        text-align: start;
+        margin-left: 17.5px;
+        margin-right: 17.5px;
+
+        &.mount {
+            font-weight: 700;
+            margin-left: 0;
+        }
+
+        &.subtotal {
+            color: $color-footer;
+        }
+    }
+
+    &-btnWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 51px;
+    }
+
+    &-btn {
+        background-color: $color-footer;
+        width: 198.09px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+}
+
+.Professional {
+    margin: 0;
+    &-descriptionWrapper {
+        max-width: 623px;
+        width: 100%;
+    }
+    &-description{
+        font-family: $regular-font;
+        font-size: 14px;
+        font-weight: 400;
+        padding-top: 27px;
+        padding-bottom: 30px;
+        padding-left: 90px;
+        width: calc(623px + 90px);
+    }
+}
+
+.Prices-subtotal{
+    font-size: 16px;
+    font-weight: 500;
+}

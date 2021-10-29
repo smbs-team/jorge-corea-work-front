@@ -1,0 +1,84 @@
+.Header {
+    background-color: $secondary-color;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+    &-btnBooking {
+        align-items: center;
+        border-radius: 0;
+        color: $white;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-up(xl) { 
+            width: 182px;
+        }
+    }
+    &-mainMenu {
+        border-bottom: solid 1px $border-header;
+        .navbar {
+            padding-bottom: 0;
+            padding-top: 0;
+            min-height: 75px;
+        }
+        .nav-item {
+            font-size: 16px;
+            text-align: center;
+            margin-right: 10px;
+            min-width: 124px;
+        }
+        .nav-link {
+            color: $white !important;
+            font-size: 16px;
+            &.icon {
+                display: inline-block;
+                text-align: center;
+                width: auto;
+            }
+        }
+        .dropdown-menu {
+            top: 57px;
+        }
+        .dropdown-menu.dropdown-menu-right.show {
+            background-color: $secondary-color;
+            border-radius: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 18px;
+            @include media-breakpoint-up(xl) { 
+                left: 50%;
+                transform: translate(-50%);
+            }
+            button {
+                background-color: $secondary-color;
+                color: $white;
+                cursor: pointer;
+                height: 48px;
+                font-size: 14px;
+                font-weight: 300;
+                text-align: center;
+                &:hover {
+                    background-color: lighten($black, .8);
+                }
+            }
+        }
+        .dropdown-toggle::after { 
+            margin-left: 1.225em;
+        }
+    }
+    &-logo {
+        margin-left: 85px;
+    }
+    &-topbar {
+        background: $black;
+        color: $font-color;
+        font-size: 14px;
+        height: auto;
+        line-height: 40px;
+        text-align: center;
+    }
+}

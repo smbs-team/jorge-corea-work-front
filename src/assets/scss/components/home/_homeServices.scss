@@ -1,0 +1,44 @@
+.HomeServices {
+    padding-bottom: 157px;
+    padding-top: 157px;
+    &-container {
+        margin: 0 auto;
+        max-width: 750px;
+        width: 100%;
+    }
+    &-description {
+        display: block;
+        font-family: $regular-font;
+        font-size: 16px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    &-title {
+        color: $primary-color;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        margin-bottom: 70px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.HomeServicesAdvantage {
+    &-item {
+        display: flex;
+        flex-direction: column;
+        h5 {
+            margin-bottom: 36px;
+            text-align: center;
+        }
+        img {
+            margin-bottom: 36px;
+        }
+        span {
+            padding-left: 45px;
+            padding-right: 45px;
+            text-align: center;
+        }
+    }
+}

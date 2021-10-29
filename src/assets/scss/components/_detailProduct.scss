@@ -1,0 +1,22 @@
+.RelatedProducts {
+    border-bottom: 1px solid $default-bg;
+    border-top: 1px solid $default-bg;
+    padding: 100px 0;
+    
+    &:last-child{
+        border-bottom: none;
+    }
+
+    &-title{
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 5px;
+
+        margin-bottom: 100px;
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

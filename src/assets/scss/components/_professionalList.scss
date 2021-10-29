@@ -1,0 +1,51 @@
+.ProfessionalCardList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfessionalList{
+    // margin: 0 45px;
+    padding-top: 90px;
+    margin: 0 auto;
+    max-width: 1020px;
+    padding-bottom: 90px;
+
+    &-title{
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 38px;
+        text-align: center;    
+        text-transform: uppercase;            
+    }
+
+    &-subtitle {
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        margin-bottom: 38px;
+        text-align: center;    
+        text-transform: uppercase;    
+    }
+
+    &-text{
+        font-size: 14px;
+        margin-bottom: 85px;
+        text-align: center; 
+        max-width: 978px;
+        width: 100%;
+        text-align: center;          
+    }
+}
+
+.separator {
+    margin: 45px 93px;
+    width: 100%;
+    height: 1px;
+    background-color: $default-bg;
+}

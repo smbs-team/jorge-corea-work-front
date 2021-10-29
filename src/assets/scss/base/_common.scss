@@ -1,0 +1,25 @@
+//Generic, reusable classes
+.block-title{
+    font-size: 30px;
+}
+
+.text-small{
+    font-size: 14px;
+}
+
+.flex-row-centered{
+    @include flex-container(row, center, center);
+}
+
+.flex-row-start{
+    @include flex-container(row, flex-start, center);
+}
+
+.flex-row-spaced{
+    @include flex-container(row, space-between, center);
+}
+
+.space-separator {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

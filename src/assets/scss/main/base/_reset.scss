@@ -1,0 +1,26 @@
+html, body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+.container {
+    max-width: 1660px;
+}
+.Main {
+    &:before {
+        content: "";
+        display: block;
+        height: 117px;
+    }
+}
+
+.modal-content {
+    border-radius: 0 !important;
+}
+
+.modal-header {
+    border: none
+}
+
+.close {
+    z-index: 1
+}

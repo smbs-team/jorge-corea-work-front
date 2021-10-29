@@ -1,0 +1,29 @@
+.btn {
+    &-action{
+        border: 1px solid $primary-color;
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        &.primary{
+            background-color: map-get($btn-color, purple);
+            color: $white;
+        }
+
+        &.transparent{
+            background-color: transparent;
+            color: $primary-color;
+        }
+    }
+    &-softblack {
+        background-color: $secondary-color;
+        color: $white;
+    }
+    &-purple {
+        background-color: map-get($btn-color, purple);
+    }    
+    
+    &-rounded {
+        border-radius: 50px;
+    }
+}

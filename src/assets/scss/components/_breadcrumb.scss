@@ -1,0 +1,19 @@
+.breadcrumb-custom {
+    font-size: 12px;
+    a {
+        color: $light-black !important;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    ol {
+        background-color: transparent;
+    }
+    
+    .breadcrumb-item{
+        color: $light-black !important;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: ">";
+    }
+}

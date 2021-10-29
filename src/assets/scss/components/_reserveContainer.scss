@@ -1,0 +1,24 @@
+.ReserveContainer{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+
+    &-left, &-right{
+        width: 100%;
+    }    
+
+    @include media-breakpoint-up(lg){
+        flex-direction: row;
+
+        &-left{
+            max-width: 330px;
+            padding-bottom: 0;
+            padding-top: 0;
+            width: 100%;
+        }
+        &-right{
+            flex-basis: 100%;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.Product{
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+
+    &-title{
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 5px;
+
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    &-ref{
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    &-description{
+        line-height: 1.75;
+        margin-bottom: 35px;
+    }
+
+    &-middle, &-quantity, &-share{
+        @include flex-container(row, center, center);
+    }
+
+    &-social{        
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &.twitter{
+            padding-left: 0;
+        }
+
+        &.instagram{
+            padding-right: 0;
+        }        
+    }
+
+    &-quantity{
+        flex-grow: 0;
+        margin-bottom: 1rem;
+    }
+
+    &-middle{
+        border-bottom: 1px solid $default-bg;
+        border-top: 1px solid $default-bg;
+        padding: 1rem 0;
+    }
+
+    &-label{
+        &.spaced-label{
+            margin-right: 20px;
+        }
+    }
+
+    &-counter{
+        @include flex-container(row, flex-start, center);
+        flex-grow: 0;
+    }
+
+    &-counterItem{
+        background-color: transparent;
+        border: 2px solid $default-bg;
+        
+        line-height: 2.5;
+        text-align: center;
+        
+        height: 46px;
+        width: 52px;
+
+        &.add{
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        &.substract{
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        &.number{
+            border-right: none;
+            border-left: none;
+            display: inline-block;
+        }
+    }
+
+    &-services{
+        padding-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    &-serviceIcon{
+        margin-right: 24px;
+    }
+
+    &-actions{
+        @include flex-container();
+
+        .transparent{
+            flex-basis: 100%;
+            margin-bottom: 20px;
+
+            &:first-child{
+                margin-right: 12px;
+            }
+        }
+
+        .primary{
+            flex-basis: 100%;
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        margin: 0;
+        margin-bottom: 50px;
+
+        &-middle, &-quantity{
+            @include flex-container(row, flex-start, center);
+        }
+
+        &-share{
+            @include flex-container(row, flex-end, center);        
+        }
+
+        &-quantity{
+            margin-bottom: 0;
+        }
+
+        &-services{
+            text-align: left;
+        }
+
+        &-actions{
+            .transparent{
+                flex-basis: 49%;
+                margin-bottom: 20px;
+    
+                &:first-child{
+                    margin-right: 12px;
+                }
+            }
+    
+            .primary{
+                flex-basis: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.Footer{
+    background-color: $light-black;
+    color: $white;    
+
+    &-col{
+        margin-bottom: 3rem;
+        text-align: center;
+        &-social {
+            @include media-breakpoint-up(lg) { 
+                max-width: 180px;
+            }
+        }
+    }
+
+    body.without-footer &{
+        display: none !important;
+    }
+
+    &-wrapper{
+        padding-left: 10.31rem;
+        padding-right: 10.31rem;
+    }
+
+    &-info{
+        border-bottom: 1px solid $separator;
+        padding-bottom: 60px;
+        padding-top: 90px;    
+    }
+
+    &-playstore, &-apple_store{
+        display: block;
+        height: 67px;
+        width: 100%;
+    }
+
+    &-playstore{
+        margin-bottom: 8px;
+    }
+
+    &-title{
+        margin-bottom: 40px;
+    }
+    
+    &-links{
+        list-style: none;
+        margin-bottom: 0; 
+        padding-left: 0;  
+    }
+    
+    &-link{
+        margin-bottom: 18px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        a{
+            color: $white;
+        }
+    }
+
+    &-newsletter{
+        min-height: 166px;
+        @include flex-container(column, center, center);           
+    }    
+    
+    &-input{
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+        height: 40px;
+        font-size: 14px;
+        width: $input-width;
+        &::-webkit-input-placeholder {
+            font-style: italic;
+        }
+        
+        margin-bottom: 8px;
+        padding-left: 18px;
+        
+        &.withIcon{
+            margin-bottom: 0;
+            margin-right: 0 !important;            
+        }
+    }
+    
+    &-inputWrap{
+        @include flex-container(row, flex-start, center); 
+        flex-wrap: nowrap; 
+        max-width: $input-width;
+        width: $input-width;         
+    }
+
+    &-submit{
+        border: none;
+        border-left: 1px solid $separator;
+        background-color: $separator;
+        
+        margin-left: -1px;
+        position: relative;
+
+        height: 40px;
+        width: 56px;
+
+        &-icon{
+            margin: 0 auto;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 12px;
+        }
+    }
+
+    &-social{
+        @include flex-container(row, space-between, center);
+        margin: 0 auto;
+        width: 142px;
+    }
+
+    &-bottomBar{
+        background-color: $black;       
+        padding-bottom: 16px; 
+        padding-top: 16px; 
+
+        &-wrapper{
+            @include flex-container(row, space-between, center);
+        }
+    }    
+
+    &-creditCards{
+        @include flex-container();
+        height: 100%;
+        padding: 1rem 0;
+    }
+
+    @include media-breakpoint-up(lg){
+        &-col{
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        &-playstore, &-apple_store{
+            width: 200px;
+        }
+
+        &-social{
+            margin: 0;
+        }
+
+        &-newsletter{
+            @include flex-container(row, flex-start, center);
+            &-title{
+                margin-bottom: 0;
+                margin-right: 30px;
+            }
+        }   
+        
+        &-input{            
+            margin-bottom: 0;
+            width: calc(#{$input-width} * 0.68);
+
+            &:first-of-type{
+                margin-right: 18px;
+            }     
+            
+            &::-moz-placeholder, 
+            &::-webkit-input-placeholder,
+            &::placeholder{
+                font-style: italic;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        
+        &-inputWrap{
+            width: calc(#{$input-width} * 0.68);
+        }
+
+        &-creditCards{
+            @include flex-container(row, flex-end, center);
+        }
+    }
+
+    @include media-breakpoint-up(xl){
+        &-input{
+            width: $input-width
+        }
+    }
+}

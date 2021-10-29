@@ -1,0 +1,58 @@
+.ServiceCard{
+    align-items: center;
+    border: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &:hover{
+        border: 3px solid $primary-color;
+        cursor: pointer;
+
+        .ServiceCard-image{
+            height: 186px;
+            width: 186px;
+        }
+    }
+
+    &-image{
+        height: 190px;
+        object-fit: cover;
+        object-position: center;
+        width: 190px;
+    }
+    &-title{
+        color: $primary-color;
+        font-family: $title-fonts;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    &-text{
+        font-size: 12px;
+    }
+    &-price{
+        font-weight: 700;
+    }
+    &-content{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        flex-shrink: 0;
+        height: 100%;
+        margin: 0 auto;
+        max-width: 240px;
+    }
+
+    @include media-breakpoint-up(md){
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}

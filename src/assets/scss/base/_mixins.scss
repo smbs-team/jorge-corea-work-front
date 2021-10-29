@@ -1,0 +1,9 @@
+@mixin flex-container ($direction: row, $main-axis: center, $sec-axis: center) {
+    align-items: $sec-axis;
+    display: flex;    
+    justify-content: $main-axis;
+    flex-direction: $direction;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}

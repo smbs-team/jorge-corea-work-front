@@ -1,0 +1,36 @@
+.BannerSection {
+    background-size: cover;
+    background-position: center center;
+    &-title {
+        font-family: $title-fonts;
+        font-weight: bold;
+        font-size: 36px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+}
+
+.HomestoreBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-action {
+        margin: 0 auto;
+        width: 285px;
+    }
+    &-container {
+        padding-bottom: 322px;
+        padding-top: 322px;
+    }
+    &-subtitle {
+        font-size: 16px;
+        margin-bottom: 66px;
+        text-align: center;
+    }
+    &-title {
+        font-size: 36px;
+        margin-bottom: 66px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

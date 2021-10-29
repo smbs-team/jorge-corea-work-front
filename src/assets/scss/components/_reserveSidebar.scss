@@ -1,0 +1,68 @@
+.ReserveSidebar{
+    align-items: flex-start;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+
+    &-items{
+        margin-bottom: 0;
+        overflow-x: scroll;
+        padding-bottom: 1rem;
+        padding-left: 30px;
+        padding-top: 1rem;
+        padding-right: 30px;
+        text-align: center;
+        white-space: nowrap;
+        width: 100%;        
+    }
+    
+    &-item{
+        color: $white;
+        display: inline-block;
+        font-family: $title-fonts;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+        margin-right: 15px;
+        opacity: 0.5;
+        text-indent: 5px;
+        text-transform: uppercase;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+        &::marker{
+            color: $black;
+        }
+
+        &.completed{
+            opacity: 1;
+        }
+    }    
+    
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+        max-width: 330px;
+        padding-left: 45px;
+        padding-right: 45px;
+        position: fixed;
+        top: 0;        
+        width: 100%;
+        z-index: -1;        
+
+        &-item{
+            display: list-item;
+            margin-bottom: 45px;
+            margin-right: 0;
+        }
+
+        &-items{
+            overflow-x: unset;
+            text-align: left;
+        }
+    }
+
+}

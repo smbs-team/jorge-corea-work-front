@@ -1,0 +1,22 @@
+.Rentbar {
+  position: absolute;
+  background: #fff;
+  left: 150px;
+  transform: translateY(-90%);
+  padding-left: 0;
+  padding-right: 0;
+  &-block1 {
+      height: 80px;
+      text-align: center;
+      padding: 30px;
+      align-items: center;
+      cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .Rentbar {
+    position: relative;
+    transform: translateY(0);
+    left: 0;
+  }
+}
